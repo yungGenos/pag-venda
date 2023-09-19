@@ -1,0 +1,308 @@
+/* Estilo global para o corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+/* Alinhamento centralizado para header e botões */
+header, button {
+  text-align: center;
+}
+
+/* Estilos básicos para a navbar */
+.navbar {
+  width: 100%;
+  background-color: #000000;  /* cor de fundo da navbar */
+  padding: 10px 0;  /* algum padding para dar espaço */
+  text-align: center;  /* centralizar elementos horizontalmente */
+}
+
+/* Estilo para o logo na navbar */
+.navbar-logo {
+  max-width: 100%;  /* isso garante que o logo nunca seja mais largo que seu container */
+  height: auto;  /* a altura será ajustada automaticamente para manter as proporções da imagem */
+  width: 150px;  /* largura padrão */
+}
+
+/* Ajusta a logo para telas menores */
+@media (max-width: 768px) {
+  .navbar-logo {
+      width: 100px;  /* largura para telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo {
+      width: 80px;  /* largura para telas ainda menores, como celulares */
+  }
+}
+/* Estilo para o cabeçalho */
+header {
+  background-color: #000000;
+  color: rgb(255, 249, 249);
+  padding: 10px 0;
+}
+
+/* Estilo principal de layout flexível para centrar o conteúdo na página */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 50px);
+}
+
+/* Estilo comum para elementos container */
+.billing-container, .container, .modal {
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgb(2, 2, 2);
+  background-color: #000000;
+  padding: 20px;
+}
+
+/* Estilo específico para o container de cobrança */
+.billing-container {
+  border: 1px solid #000000;
+  text-align: center;
+}
+
+/* Estilo padrão para botões */
+button {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: black;
+  border: black;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Efeito de hover para botões */
+button:hover {
+  background-color: #ffffff;
+}
+
+/* Estilo padrão para containers */
+.container {
+  display: flex;
+  max-width: 3380px;
+  margin: 16px 32px;
+  width: 460px;
+  height: 120px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+
+  /* Variáveis de cores para containers */
+  --light: rgb(2, 1, 1);
+  --dark: rgb(10, 9, 9);
+  --br: 8px;
+}
+
+/* Efeito de hover para o título dentro dos containers */
+.container:hover .title {
+  opacity: 1;
+}
+
+/* Estilo para campos de entrada */
+.input {
+  background-color: transparent;
+  border: 2px solid rgb(0, 0, 0);
+  color: var(--light);
+  max-width: 200px;
+  padding: .5rem;
+  border-radius: var(--br);
+  outline: none;
+  opacity: .8;
+  transition: .2s ease-in-out;
+}
+
+/* Efeito de foco para campos de entrada */
+.input:focus {
+  opacity: 1;
+}
+
+/* Estilo para títulos dentro dos containers */
+.title {
+  border-radius: var(--br);
+  transform: translate(-50%, -150%);
+  background-color: var(--light);
+  transition: .2s ease-in-out;
+  opacity: 0;
+  color: var(--white);     
+  position: absolute;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: .5rem;
+  left: 50%;
+}
+
+/* Estilo para a seta apontando para o título */
+.title::before {
+  transform: translate(-50%, 50%) rotate(45deg);
+  background-color: var(--light);
+  position: absolute;
+  z-index: -1;
+  content: '';
+  width: 10px;
+  height: 10px;
+  bottom: 0;
+  left: 50%;
+}
+
+/* Efeito de hover para containers */
+.container:hover {
+  transform: scale(1.03);
+  width: 220px;
+}
+
+/* Estilo para descrição dentro do container */
+.container form .descr {
+  font-size: 20px;
+  font-weight: 500;
+  color: #f3e3e3;
+  margin: 25px 0;
+}
+
+/* Estilo de responsividade para dispositivos de largura máxima 480px */
+@media only screen and (max-width: 480px) {
+  .container {
+    transform: scale(0.7);
+  }
+
+  .container:hover {
+    transform: scale(0.74);
+  }
+
+  .new {
+    font-size: 18px;
+  }
+}
+
+/* Estilo de responsividade para dispositivos de largura mínima 3380px */
+@media only screen and (min-width: 3380px) {
+  body {
+    font-size: 20px;
+  }
+
+  .container {
+    margin: auto;
+  }
+}
+
+/* Estilo para modais */
+.modal {
+  width: fit-content;
+  height: fit-content;
+  max-width: 450px;
+}
+
+/* Estilo para formularios */
+.form, .credit-card-info--form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Estilo para opções de pagamento */
+.payment--options {
+  width: calc(100% - 40px);
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Estilo específico para botões dentro das opções de pagamento */
+.payment--options button, .purchase--btn {
+  height: 55px;
+  background: #faf4f4;
+  border-radius: 11px;
+}
+
+/* Estilo para ícones SVG nos botões das opções de pagamento */
+.payment--options button svg {
+  height: 18px;
+}
+
+.payment--options button:last-child svg {
+  height: 22px;
+}
+
+/* Estilo para separador */
+.separator {
+  width: calc(100% - 20px);
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
+  color: #f9fbff;
+  margin: 0 10px;
+}
+
+/* Estilo para o texto no separador */
+.separator > p {
+  word-break: keep-all;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 11px;
+  margin: auto;
+}
+
+/* Estilo para a linha do separador */
+.separator .line {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: #e6e6e6;
+}
+
+/* Estilo para container de entrada */
+.input_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Estilo para layout dividido */
+.split {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  gap: 15px;
+}
+
+/* Estilo para campos de entrada e seu foco */
+.split input, .input_field {
+  width: 100%;
+  height: 40px;
+  padding-left: 16px;
+  border-radius: 9px;
+  background-color: #0e0b0b;
+  border: 1px solid transparent;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  font-size: 15px;
+  font-weight: 400;
+  color: #f0f0f0;
+}
+
+.split input:focus, .input_field:focus {
+  border: 1px solid #4a91cf;
+}
+
+/* Estilo para o botão de compra */
+.purchase--btn {
+  background-color: #e70000;
+  width: 100%;
+  border-radius: 10px;
+  color: #f9f9f9;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* Efeito de hover para botão de compra */
+.purchase--btn:hover {
+  background-color: #000000;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<!----kai_genos------->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Pagamento PIX</title>
+  <link rel="stylesheet" href="stylesPIX.css">
+  <script src="scriptPIX.js"></script>
+  <script src="instascan.min.js"></script>
+</head>
+
+<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIX Payment</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Importando o arquivo CSS externo -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <img src="pix_logo.png" alt="PIX Logo">
+        <h1 class="title">Pagamento PIX</h1>
+      </div>
+      <div class="container">
+        <h2 class="choose-pix-title">Escolha a chave PIX:</h2>
+        <h2 class="choose-pix-title">Escolha a chave PIX:</h2>
+        <div class="pix-options">
+          <button class="pix-option" onclick="showPixInputField('CPF')">CPF</button>
+          <button class="pix-option" onclick="showPixInputField('E-mail')">E-mail</button>
+          <button class="pix-option" onclick="showPixInputField('Telefone')">Telefone</button>
+          <button class="pix-option" onclick="showPixInputField('Chave Aleatória')">Chave Aleatória</button>
+        </div>
+        
+        <div class="pix-input-container">
+          <div id="pixInputField">
+
+            <!----kai_genos------->
+        <div class="separator"></div> <!-- Linha de separação -->
+  
+        <h2 class="info-title">Chave PIX:</h2>
+        <input type="text" id="pixKeyInput" class="pix-key-input" placeholder="Digite a chave PIX">
+        <!-- Resto do código HTML anterior... -->
+
+<!-- Resto do código HTML anterior... -->
+
+<div class="qr-code">
+  <img src="C:\Users\desk\Desktop\site refericia\conta pj site\pix\teste-removebg-preview.png" id="qrCode" alt="QR Code PIX">
+</div>
+<button class="create-key-button" onclick="generateAndDisplayKey()">Crie uma chave</button>
+
+<!-- Resto do código HTML anterior... -->
+        </div>
+</div>
+
+<div class="separator"></div> <!-- Linha de separação -->
+
+<h2 class="info-title">Valor a pagar:</h2>
+<input type="number" step="0.01" id="amountInput" class="amount-input" placeholder="Digite o valor em R$">
+<div class="amount-buttons">
+  <!-- Previous amount buttons... -->
+</div>
+
+<button class="efetuar-pix-button" onclick="efetuarPix()">Efetuar PIX</button>
+
+    </header>
+ <!----kai_genos------->
+
+  <div id="qrScanner" style="width: 300px; height: 300px;"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/qrcode.min.js"></script>
+
+</body>
+
+</html>

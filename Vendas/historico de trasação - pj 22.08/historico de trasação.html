@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Transações Bancárias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Histórico de Transações</h1>
+    </header>
+
+    <main>
+        <section class="controls">
+            <label for="filtro">Filtrar por Tipo:</label>
+            <select id="filtro" onchange="filtrarTransacoes()">
+                <option value="todos">Todos</option>
+                <option value="Débito">Débito</option>
+                <option value="Crédito">Crédito</option>
+            </select>
+
+            <div class="transaction-add">
+                <h2>Adicionar Transação</h2>
+                <div class="add-controls">
+                    <input type="text" id="descricao" placeholder="Descrição" required>
+                    <select id="tipo" required>
+                        <option value="Débito">Débito</option>
+                        <option value="Crédito">Crédito</option>
+                    </select>
+                    <input type="number" id="valor" placeholder="Valor R$" required>
+                    <button onclick="addTransaction()">Adicionar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="balance">
+            <h2>Saldo Atual: <span id="saldo">R$ 0,00</span></h2>
+        </section>
+
+        <section>
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Data</th>
+                        <th>Descrição</th>
+                        <th>Tipo</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>01/09/2023</td>
+                        <td>Compra em Supermercado</td>
+                        <td>Débito</td>
+                        <td>R$ 200,00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>05/09/2023</td>
+                        <td>Salário</td>
+                        <td>Crédito</td>
+                        <td>R$ 3.500,00</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>10/09/2023</td>
+                        <td>Restaurante</td>
+                        <td>Débito</td>
+                        <td>R$ 150,00</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>15/09/2023</td>
+                        <td>Venda de Produto</td>
+                        <td>Crédito</td>
+                        <td>R$ 450,00</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>17/09/2023</td>
+                        <td>Pagamento de aluguel</td>
+                        <td>Débito</td>
+                        <td>R$ 1.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>18/09/2023</td>
+                        <td>Reembolso de despesas</td>
+                        <td>Crédito</td>
+                        <td>R$ 300,00</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>20/09/2023</td>
+                        <td>Compra de eletrônicos</td>
+                        <td>Débito</td>
+                        <td>R$ 2.500,00</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>23/09/2023</td>
+                        <td>Freelance de Design</td>
+                        <td>Crédito</td>
+                        <td>R$ 2.000,00</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+                    <!-- Linhas serão inseridas aqui via JavaScript -->
+                </tbody>
+            </table>
+            
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

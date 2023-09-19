@@ -1,0 +1,171 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e8eaf6;
+    color: #333;
+    flex-direction: row; /* Define direção horizontal */
+    flex-wrap: wrap; /* Se o conteúdo não couber, ele vai para a próxima linha */
+}
+
+.transfer-form {
+    width: 90%;
+    max-width: 500px;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin: 10px; /* Adiciona uma margem para espaço entre os elementos */
+}
+
+.transfer-form:hover {
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.12);
+}
+
+.transfer-form h2, .transfer-form h3 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.transfer-form button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #7986cb;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 49%; /* Faz com que fiquem lado a lado */
+}
+
+.transfer-form button:hover {
+    background-color: #5c6bc0;
+}
+
+.transfer-form select, .transfer-form input {
+    width: 100%;
+    padding: 15px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.transfer-form select:focus, .transfer-form input:focus {
+    border-color: #7986cb;
+    outline: none;
+}
+
+/* Consultas de mídia */
+@media (max-width: 600px) {
+    body {
+        flex-direction: column; /* Quando a tela for menor que 600px, o conteúdo será alinhado em coluna */
+    }
+
+    .transfer-form {
+        width: 100%; 
+        padding: 20px 10px;
+        box-shadow: none; /* Removemos a sombra para um visual mais limpo em dispositivos móveis */
+    }
+}
+.transfer-details {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f6f8fc;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.transfer-details label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    color: #333;
+}
+
+.transfer-details input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.transfer-details .account-types {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os botões */
+    margin-top: 5px;
+}
+
+.transfer-details .account-types button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7986cb;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.transfer-details .account-types button:hover {
+    background-color: #5c6bc0;
+}
+
+.transfer-details .transfer-button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.transfer-details .transfer-button:hover {
+    background-color: #43a047;
+}
+.button {
+    transition: all 0.3s ease; /* Efeito de transição suave */
+    background-color: #7986cb;
+    color: #fff;
+}
+
+.button-selected {
+    background-color: #5c6bc0; /* Cor mais escura para destacar */
+    color: #ffffff;
+    border: 2px solid #fff; /* Bordas brancas para maior destaque */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Uma sombra para dar uma sensação de elevação */
+}
+.button-group input[type="radio"] {
+    display: none; /* Esconde os radios */
+}
+
+.button-label {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #7986cb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Quando o radio estiver selecionado, muda a cor do label/botão */
+.button-group input[type="radio"]:checked + .button-label {
+    background-color: #5c6bc0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.button-selected {
+    background-color: #5c6bc0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}

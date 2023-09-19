@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transferência Bancária</title>
+    <link rel="stylesheet" href="stylesTED.css">
+</head>
+
+<body>
+
+    <div class="transfer-form">
+        <h2>Formulário de Transferência Bancária</h2>
+    
+        <h3>Tipo de Transferência</h3>
+
+        <div class="button-group">
+            <input type="radio" name="transferType" id="doc" value="DOC" onclick="selectTransferType('DOC')" />
+            <label for="doc" class="button-label">DOC</label>
+            
+            <input type="radio" name="transferType" id="ted" value="TED" onclick="selectTransferType('TED')" />
+            <label for="ted" class="button-label">TED</label>
+
+
+
+    
+        <h3>Escolha o Banco Destinatário</h3>
+        <select id="bank-select">
+            <option value="banco1">Banco 1</option>
+            <option value="banco2">Banco 2</option>
+            <option value="banco3">Banco 3</option>
+        </select>
+    
+        <h3>Dados do Destinatário</h3>
+        <button onclick="selectRecipientType('CPF')">CPF</button>
+        <button onclick="selectRecipientType('CNPJ')">CNPJ</button>
+        <input id="recipient-data" type="text" onkeyup="applyMask(this)" placeholder="Informe o CPF ou CNPJ">
+    
+        <h3>Tipo de Conta</h3>
+        
+        <div class="button-group">
+            <input type="radio" name="transferType" id="ContaCorrente" value="Conta Corrente" onclick="selectTransferType('Conta Corrente')" />
+            <label for="ContaCorrente" class="button-label" id="ContaCorrenteButton">Conta Corrente</label>
+            
+            <input type="radio" name="transferType" id="ContaPoupanca" value="Conta Poupança" onclick="selectTransferType('Conta Poupança')" />
+            <label for="ContaPoupanca" class="button-label" id="ContaPoupancaButton">Conta Poupança</label>
+        </div>
+        
+    
+        <h3>Detalhes da Transferência</h3>
+        <label for="transfer-date">Data da Transferência:</label>
+        <input type="date" id="transfer-date">
+    
+        <label for="amount">Valor:</label>
+        <input type="text" id="amount" placeholder="R$ 00,00" onkeyup="formatCurrency(this)">
+        
+    
+        <h3>Agência</h3>
+        <input type="text" id="agency" maxlength="4" pattern="\d{4}" title="Por favor, digite exatamente 4 dígitos." />
+        
+        <h3>Conta</h3>
+        <input type="text" id="account" maxlength="9" pattern="\d{1,9}" title="Por favor, digite no máximo 9 dígitos." />
+        
+    
+        <button onclick="executeTransfer()">Transferir</button>
+
+        </div>
+        
+    </div>
+    
+            <!-- A caixa de entrada será preenchida dinamicamente pelo JavaScript -->
+
+
+    <script src="scriptsTED.js"></script>
+</body>
+
+</html>

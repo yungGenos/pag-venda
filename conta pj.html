@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<!----kai_genos------->
+<head>
+    <title>Sidebar Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <aside class="main-sidebar-left">
+    <ul class="sidebar-menu">
+        <li>
+            <button type="button" class="button-menu">
+                <span>Dashboard</span>
+            </button>
+        </li>
+        <li>
+            <button type="button" class="button-menu">
+                <span>Cobranças</span>
+                <ul class="submenu">
+                    <li>
+                        <a href="/billets"><span>Emissão de boletos</span></a>
+                    </li>
+                    <li>
+                        <a href="/checkout"><span>Links de pagamento</span></a>
+                    </li>
+                    <li>
+                        <a href="/typed-charge"><span>Cobrança digitada</span></a>
+                    </li>
+                </ul>
+            </button>
+        </li>
+        <li>
+            <button type="button" class="button-menu">
+                <span>Pagamento</span>
+                <ul class="submenu">
+                    <li>
+                        <a href="/billets"><span>Boleto</span></a>
+                    </li>
+                    <li>
+                        <a href="/checkout"><span>PIX</span></a>
+                    </li>
+                    <li>
+                        <a href="/typed-charge"><span>TED</span></a>
+                    </li>
+                </ul>
+            </button>
+        </li>
+        <li>
+            <button type="button" class="button-menu">
+                <span>Vendas</span>
+                <ul class="submenu">
+                    <li>
+                        <a href="/billets"><span>Histórico de Transações</span></a>
+                    </li>
+                    <li>
+                        <a href="/checkout"><span>Recibos</span></a>
+                    </li>
+                    <li>
+                        <a href="/typed-charge"><span>Antecipação e Lançamentos Futuros</span></a>
+                    </li>
+                </ul>
+            </button>
+        </li>
+        <li>
+          <!----kai_genos------->
+            <button type="button" class="button-menu">
+                <span>Estabelecimento</span>
+                <ul class="submenu">
+                    <li>
+                        <a href="/billets"><span>Dados do Estabelecimento</span></a>
+                    </li>
+                    <li>
+                        <a href="/checkout"><span>Equipamentos</span></a>
+                    </li>
+                    <li>
+                        <a href="/typed-charge"><span>Limites</span></a>
+                    </li>
+                    <li>
+                        <a href="/billets"><span>Contas bancárias</span></a>
+                    </li>
+                    <li>
+                        <a href="/checkout"><span>Usuários</span></a>
+                    </li>
+                    <li>
+                        <a href="/typed-charge"><span>Solicitações de suporte</span></a>
+                    </li>
+                </ul>
+            </button>
+        </li>
+    </ul>
+</aside>
+<!----kai_genos------->
+    <main class="container">
+
+    <main class="container">
+      <div class="balance-container">
+        <h2 class="balance-text">Seu saldo é:</h2>
+        <h1 id="balance-amount" class="balance-amount">R$10.000,00</h1>
+        <button id="toggle-button" class="balance-icon">👁️</button>
+      </div>
+
+      <!----kai_genos------->
+      <body>
+        <div class="card">
+          <h2>Cartão de crédito empresarial</h2>
+          <div class="info">
+            <div class="fatura">
+              <span class="fatura-label">Fatura:</span>
+              <span class="fatura-value">R$ 2.000</span>
+            </div>
+      
+            <div class="limite">
+              <span class="limite-label">Limite disponível:</span>
+              <span class="limite-value">R$ 20.000</span>
+            </div>
+            <div class="fechamento">
+              <span class="fechamento-label">Fechamento:</span>
+              <span class="fechamento-value">12 AGO</span>
+            </div>
+            <div class="vencimento">
+              <span class="vencimento-label">Vencimento:</span>
+              <span class="vencimento-value">25 AGO</span>
+            </div>
+      <!----kai_genos------->
+      <div class="container">
+        <div class="card_box">
+            <span></span>
+        </div>
+    </div>
+      <!----kai_genos------->
+
+    <div class="card-container">
+      <div class="card">
+        <h3 class="card-title">Histórico de transações</h3>
+        <p class="card-description">Veja o histórico completo de suas transações.</p>
+        <a href="#" class="card-button">Acessar</a>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Extrato</h3>
+        <p class="card-description">Obtenha um extrato detalhado de suas atividades financeiras.</p>
+        <a href="#" class="card-button">Acessar</a>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Pagar conta</h3>
+        <p class="card-description">Pague suas contas online rapidamente e facilmente.</p>
+        <a href="#" class="card-button">Acessar</a>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Link de pagamento</h3>
+        <p class="card-description">Crie e compartilhe links de pagamento com clientes.</p>
+        <a href="#" class="card-button">Acessar</a>
+      </div>
+      <div class="card">
+        <h3 class="card-title">PIX</h3>
+        <p class="card-description">Faça transferências instantâneas com o PIX.</p>
+        <button class="card-button" id="replace" onclick="replace()">Acessar</button>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Emissão de boletos</h3>
+        <p class="card-description">Emita boletos para pagamentos e cobranças.</p>
+        <a href="" class="card-button">Acessar</a>
+      </div>
+    </div>
+  <!----kai_genos------->
+  <script>
+    const balance = document.getElementById('balance');
+    const hiddenBalance = document.getElementById('hiddenBalance');
+    const toggleButton = document.getElementById('toggleBalance');
+  
+    toggleButton.addEventListener('click', function() {
+      const isBalanceHidden = balance.style.display === 'none';
+  
+      if (isBalanceHidden) {
+        balance.style.display = 'inline';
+        hiddenBalance.style.display = 'none';
+      } else {
+        balance.style.display = 'none';
+        hiddenBalance.style.display = 'inline';
+      }
+    });
+  </script>
+  <script>
+    function replace() {
+      // Vamos redirecionar para a página "TELA PIX.html" no mesmo diretório:
+      window.location.href = "TELA%20PIX.html";
+    }
+    </script>
+  <script src="script.js"></script>
+</body>
+</html>
+<!----kai_genos------->
+

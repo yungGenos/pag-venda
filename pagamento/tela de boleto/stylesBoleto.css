@@ -1,0 +1,145 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #454d6b;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.side-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.side-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.pix-container, .pagamento-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 450px;
+    margin: 10px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.pagamento-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    margin: 10px;
+}
+
+.pagamento-container div {
+    margin-bottom: 15px;
+}
+
+.pagamento-container label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.pagamento-container input[type="text"],
+.pagamento-container input[type="number"],
+.pagamento-container input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.pagamento-container button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagamento-container button:hover {
+    background-color: #0056b3;
+}
+
+.saldo-card {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    margin: 10px;
+}
+
+.saldo-card h2 {
+    margin-bottom: 10px;
+}
+
+.saldo-card p {
+    margin-bottom: 15px;
+}
+
+.saldo-card button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.saldo-card button:hover {
+    background-color: #0056b3;
+}
+
+/* ... Your existing styles ... */

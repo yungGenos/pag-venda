@@ -1,0 +1,247 @@
+/* Estilos para o corpo da página */
+body {
+  background-color: #2c3e50;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilos para o container principal */
+.container {
+  background-color: #34495e;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Estilos para o logo e título */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo-container img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 28px;
+}
+
+/* Estilos para títulos informativos */
+.info-title {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+/* Estilos para o valor a pagar */
+.amount {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Estilos para a chave PIX */
+.pix-key {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Estilos para o QR Code */
+.qr-code {
+  margin-top: 30px;
+}
+
+.qr-code img {
+  width: 240px;
+  height: 240px;
+  border-radius: 10px;
+}
+
+/* Estilos para o botão "Crie uma chave" */
+.create-key-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 30px;
+}
+
+.create-key-button:hover {
+  background-color: #2980b9;
+}
+
+/* Estilos para o campo de valor a pagar e botões de valores */
+.amount-input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #34495e;
+  color: #fff;
+  outline: none;
+}
+
+.amount-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.amount-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+}
+
+.amount-button:hover {
+  background-color: #2980b9;
+}
+
+/* Estilos para a seção "Escolha a chave PIX" */
+.choose-pix-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.pix-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pix-option {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+}
+
+.pix-option:hover {
+  background-color: #2980b9;
+}
+
+/* Estilos para o botão "Efetuar PIX" */
+.efetuar-pix-button {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 30px;
+}
+
+.efetuar-pix-button:hover {
+  background-color: #27ae60;
+}
+
+/* Estilos para a linha de separação */
+.separator {
+  margin: 30px 0;
+  border-top: 2px solid #fff;
+}
+/* Estilos para o campo "Digite a chave PIX" */
+.pix-key-input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  font-size: 18px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: #333;
+  outline: none;
+}
+
+.pix-key-input::placeholder {
+  color: #aaa;
+}
+
+.pix-key-input:focus {
+  border-color: #2980b9;
+}
+/* Estilos para o campo "Digite a chave PIX" */
+.pix-key-input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  font-size: 18px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: #333;
+  outline: none;
+}
+
+.pix-key-input::placeholder {
+  color: #aaa;
+}
+
+.pix-key-input:focus {
+  border-color: #2980b9;
+}
+
+/* Estilos para o campo CPF */
+#pixInputCPF {
+  text-transform: uppercase;
+}
+
+/* Estilos para o campo Telefone */
+#pixInputTelefone {
+  max-width: 11ch; /* Máximo de 11 caracteres (números de telefone com DDD) */
+}
+
+/* Estilos para o campo Chave Aleatória */
+#pixInputAleatoria {
+  text-transform: uppercase;
+}
+/* Estilos para o campo "Digite a chave PIX" e as opções */
+.pix-input-container {
+  margin-top: 20px;
+}
+
+.pix-option-description {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+}
+
+
+/* Estilos anteriores... */
+
+
+
+/* Estilos adicionais... */
+

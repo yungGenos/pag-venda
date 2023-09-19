@@ -1,0 +1,419 @@
+body {
+  background-color: #000000;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  display: flex; /* makes main elements line up side by side */
+}
+
+.main-sidebar-left {
+  width: 25%;
+  padding: 20px;
+  height: 100vh;
+  background-color: #1c1c1c;
+  overflow: auto; /* if content overflows, show a scrollbar */
+}
+
+.container {
+  width: 75%;
+  padding: 20px;
+}
+
+/* Other CSS rules here... */
+
+.logo {
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 2em;
+}
+
+.wrapper {
+  display: flex;
+}
+
+nav {
+  width: 25%;
+  padding: 20px;
+  height: 100vh;
+  background-color: #1c1c1c;
+}
+
+.container {
+  width: 75%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.balance-container,
+.card,
+.business-info {
+  background-color: #1c1c1c;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+  background-color: #4caf50;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+body {
+  background-color: #000000;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  display: flex;
+}
+
+.main-sidebar-left {
+  width: 25%;
+  padding: 20px;
+  height: 100vh;
+  background-color: #1c1c1c;
+  overflow: auto;
+}
+
+.sidebar-menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-menu > li {
+  margin-bottom: 10px;
+}
+
+.button-menu {
+  color: #ffffff;
+  background: #00000054;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button-menu:hover {
+  background: #4caf50;
+}
+
+.submenu {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+}
+
+.submenu > li > a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #4caf50;
+  display: block;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.submenu > li > a:hover {
+  background-color: #45a049;
+}
+
+.button-menu.active .submenu {
+  display: block;
+}
+.footer-buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f8f9fa; /* Cor de fundo do container dos botões */
+}
+
+.footer-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+}
+
+.footer-btn:hover {
+  background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+/* Restante do seu CSS... */
+
+/* Restante do seu CSS... */
+
+.card-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+margin: 0 auto;
+max-width: 1200px; /* Ajuste o tamanho máximo de acordo com o seu layout */
+}
+.card {
+flex: 1 0 300px;
+margin: 10px;
+padding: 20px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+transition: 0.3s;
+background-color: #1f1f1f;
+border-radius: 10px;
+}
+
+/* Importe uma fonte personalizada do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.card-title {
+font-size: 25px;
+font-weight: bold;
+color: #fff;
+margin-bottom: 20px;
+}
+
+.card-number {
+font-size: 25px;
+color: #fff;
+margin-bottom: 20px;
+}
+
+.card-info {
+display: flex;
+flex-direction: column;
+}
+
+.label {
+font-size: 14px;
+color: #fff;
+}
+
+.info {
+font-size: 16px;
+color: #fff;
+}
+
+.card-button {
+display: inline-block;
+margin-top: 10px;
+padding: 10px 20px;
+background-color: #007BFF;
+color: #fff;
+text-align: center;
+border: none;
+cursor: pointer;
+transition: background-color 0.3s;
+border-radius: 15px;
+}
+
+.card-button:hover {
+background-color: #0056b3;
+}
+
+/* Estilos para os outros cartões */
+.card-container .card:not(:first-child) {
+background-color: #1f1f1f;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+border-radius: 10px;
+}
+
+.card-container .card h3 {
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.card-container .card p {
+font-size: 16px;
+color: #ffffff;
+margin-bottom: 20px;
+}
+
+.card-container .card a {
+display: inline-block;
+margin-top: 10px;
+padding: 10px 20px;
+background-color: #007BFF;
+color: #fff;
+text-align: center;
+text-decoration: none;
+border: none;
+cursor: pointer;
+transition: background-color 0.3s;
+border-radius: 5px;
+}
+
+.card-container .card a:hover {
+background-color: #0056b3;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+/* Estilos para telas menores que 768px de largura */
+.card-title {
+  font-size: 20px;
+}
+
+.card-number {
+  font-size: 20px;
+}
+
+.label {
+  font-size: 12px;
+}
+
+.info {
+  font-size: 14px;
+}
+
+.card-button {
+  font-size: 14px;
+  padding: 8px 16px;
+}
+
+.card-container .card h3 {
+  font-size: 18px;
+}
+
+.card-container .card p {
+  font-size: 14px;
+}
+
+.card-container .card a {
+  font-size: 14px;
+  padding: 8px 16px;
+}
+}
+
+@media (max-width: 480px) {
+/* Estilos para telas menores que 480px de largura */
+.card-title {
+  font-size: 18px;
+}
+
+.card-number {
+  font-size: 18px;
+}
+
+.label {
+  font-size: 10px;
+}
+
+.info {
+  font-size: 12px;
+}
+
+.card-button {
+  font-size: 12px;
+  padding: 6px 12px;
+}
+
+.card-container .card h3 {
+  font-size: 16px;
+}
+
+.card-container .card p {
+  font-size: 12px;
+}
+
+.card-container .card a {
+  font-size: 12px;
+  padding: 6px 12px;
+}
+}
+
+
+
+.container {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.card_box {
+width: 200px;
+height: 250px;
+border-radius: 20px;
+background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
+position: relative;
+box-shadow: 0 25px 50px rgba(0,0,0,0.55);
+cursor: pointer;
+transition: all .3s;
+}
+
+.card_box:hover {
+transform: scale(0.9);
+}
+
+.card_box span {
+position: absolute;
+overflow: hidden;
+width: 150px;
+height: 150px;
+top: -10px;
+left: -10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.card_box span::before {
+content: 'Premium';
+position: absolute;
+width: 150%;
+height: 40px;
+background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+transform: rotate(-45deg) translateY(-20px);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: 600;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+}
+
+.card_box span::after {
+content: '';
+position: absolute;
+width: 10px;
+bottom: 0;
+left: 0;
+height: 10px;
+z-index: -1;
+box-shadow: 140px -140px #cc3f47;
+background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+}
+
+/* Estilo para o novo botão */
+.card-button#replace {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}

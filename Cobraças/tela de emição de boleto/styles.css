@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.05);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.currency-input {
+    display: flex;
+    align-items: center;
+}
+
+.currency-input span {
+    padding-right: 10px;
+    font-weight: bold;
+}
+main {
+    display: flex;
+    justify-content: center; /* Centraliza o card horizontalmente */
+    align-items: center; /* Centraliza o card verticalmente */
+    height: 100vh; /* Toma a altura total da janela/viewport */
+    background-color: #f5f7fa; /* Cor de fundo neutra */
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra leve para dar o efeito de elevação */
+    width: 300px; /* Definindo um width fixo para o card. Você pode ajustar conforme necessário */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pixButton {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px; /* Espaço entre o botão e o QR code */
+    transition: background-color 0.3s ease; /* Efeito de transição ao passar o mouse */
+}
+
+#pixButton:hover {
+    background-color: #0056b3;
+}
+
+#qrcode {
+    width: 128px;
+    height: 128px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #ffffff;
+}
+#paymentForm {
+    margin-bottom: 20px;
+}
+
+#paymentOptions h2 {
+    margin-top: 20px;
+}

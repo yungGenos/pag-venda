@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Link de Pagamento</title>
+</head>
+
+
+<body>
+    <main>
+        <h1>Crie seu link de pagamento</h1>
+        <form id="paymentForm">
+            <label for="productName">Nome do Produto:</label>
+            <input type="text" id="productName" required>
+            <br>
+            <label for="productPrice">Preço (R$):</label>
+            <input type="text" id="productPrice" oninput="handlePriceInput(this)" placeholder="R$ 0,00" required>
+            <br>
+            
+          <!-- ... (resto do código) ... -->
+
+<div class="button-container">
+    <button type="submit">Gerar Link</button>
+    <div id="paymentURL" class="url-display"></div>
+    <button id="paymentButton" type="button">Pagar Agora</button>
+</div>
+
+<!-- ... (resto do código) ... -->
+
+        </form>
+    </main>
+<!-- ... -->
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-masker@1.2.0/lib/vanilla-masker.min.js"></script>
+
+</body>
+
+</html>
